@@ -12,6 +12,10 @@
   color: #FF8A00;
 }
 
-.hainanese-chicken-sauce .name, .hainanese-chicken-sauce .name {
+.hainanese-chicken-sauce .name, .mild-hainanese-chicken-sauce .name {
   color: #F8E71C;
+}
+
+.product .name {
+  text-transform: uppercase;
 }

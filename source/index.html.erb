@@ -1,10 +1,11 @@
 ---
-title: fokchow.com
+title: Fok Chow - Sauces and Condiments
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div class="home">
+  <ul class="product">
+    <% data.products.each do |_, product| %>
+      <li class="<%= product.id %>"><a class="name" href="/products/<%= product.id %>"><%= product.title %></a></li>
+    <% end %>
+  </ul>
+</div>
