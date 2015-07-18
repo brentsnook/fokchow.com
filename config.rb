@@ -76,5 +76,5 @@ activate :deploy do |deploy|
 end
 
 data.products.each do |_, product|
-  proxy "/products/#{product.id}/index.html", "/product.html", locals: { product: product }
+  proxy "/products/#{product.id}/index.html", "/product.html", locals: { product: product }, ignore: true
 end
