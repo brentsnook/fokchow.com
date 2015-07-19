@@ -71,10 +71,17 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :directory_indexes
+
 activate :deploy do |deploy|
   deploy.method = :git
 end
 
 data.products.each do |_, product|
-  proxy "/products/#{product.id}/index.html", "/product.html", locals: { product: product }, ignore: true
+  proxy "/products/#{product.id}", "/product.html", locals: { product: product }, ignore: true
 end
+
+# legacy products
+proxy "/products/mild-hainanese-chicken-sauce", "/product.html", locals: { product: data.products['mild-hainanese-sauce'] }, ignore: true
+
+proxy "/products/hainanese-chicken-sauce", "/product.html", locals: { product: data.products['hainanese-sauce'] }, ignore: true
