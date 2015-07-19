@@ -83,5 +83,4 @@ end
 
 # legacy products
 proxy "/products/mild-hainanese-chicken-sauce", "/product.html", locals: { product: data.products['mild-hainanese-sauce'] }, ignore: true
-
 proxy "/products/hainanese-chicken-sauce", "/product.html", locals: { product: data.products['hainanese-sauce'] }, ignore: true
