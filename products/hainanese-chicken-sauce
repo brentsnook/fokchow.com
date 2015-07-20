@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/images/fok-chow-logo.ico" type="image/x-icon" />
   </head>
 
-  <body class="products products_hainanese-chicken-sauce">
+  <body class="products products_hainanese-chicken-sauce products_hainanese-chicken-sauce_index">
     
 <div class="product hainanese-sauce">
   <h1 class="name">Hainanese Sauce</h1>

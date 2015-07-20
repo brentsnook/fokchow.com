@@ -13,7 +13,7 @@
     <link rel="shortcut icon" href="/images/fok-chow-logo.ico" type="image/x-icon" />
   </head>
 
-  <body class="products products_hot-chilli-jam">
+  <body class="products products_hot-chilli-jam products_hot-chilli-jam_index">
     
 <div class="product hot-chilli-jam">
   <h1 class="name"><span class="hot">Hot</span> Chilli Jam</h1>
