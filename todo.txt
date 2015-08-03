@@ -1,0 +1,6 @@
+- install sass and convert stylsheets
+- install compass and convert styles
+- install haml and convert templates
+- add an all.css
+- add central colour definitions for gold and red
+- fix font problem
