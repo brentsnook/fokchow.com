@@ -7,10 +7,14 @@
 - RELEASE
 
 - add analytics
+- shrink tiles
 - add central colour definitions for gold and red
 - add grid layout
+
+- PROMOTE
+
 - enable summary in google search results
-- SEO
 - responsive layout
 - add recipes
 - add blog posts
+- SEO
