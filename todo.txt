@@ -1,6 +1,9 @@
-- install sass and convert stylsheets
+- convert stylesheets to scss
+- split header into separate files
 - install compass and convert styles
 - install haml and convert templates
-- add an all.css
 - add central colour definitions for gold and red
 - fix font problem
+- add analytics
+- enable summary in google search results
+- SEO
