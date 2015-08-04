@@ -1,9 +1,16 @@
 - install compass and convert styles
-- add central colour definitions for gold and red
 - add top menu
 - finish footer
 - fix font problem
+- add product page layout
+
+- RELEASE
+
 - add analytics
+- add central colour definitions for gold and red
 - add grid layout
 - enable summary in google search results
 - SEO
+- responsive layout
+- add recipes
+- add blog posts
