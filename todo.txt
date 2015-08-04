@@ -1,5 +1,5 @@
-- install compass and convert styles
 - add top menu
+- add social media
 - finish footer
 - fix font problem
 - add product page layout
