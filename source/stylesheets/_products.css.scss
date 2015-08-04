@@ -1,19 +1,19 @@
-.name .hot { color: #FF0322; }
-
-.name .mild { color: #38D200; }
-
-.name .ploughmans { color: #0BD167; }
-
-.szechuan-chilli-oil .name {
-  color: #E184F4;
+.name {
+  .hot { color: #FF0322; }
+  .mild { color: #38D200; }
+  .ploughmans { color: #0BD167; }
 }
 
-.chilli-jam .name, .hot-chilli-jam .name, .ploughmans-chilli-jam .name {
-  color: #FF8A00;
+.szechuan-chilli-oil {
+  .name { color: #E184F4; }
 }
 
-.hainanese-sauce .name, .mild-hainanese-sauce .name {
-  color: #F8E71C;
+.chilli-jam, .hot-chilli-jam, .ploughmans-chilli-jam {
+  .name { color: #FF8A00; }
+}
+
+.hainanese-sauce, .mild-hainanese-sauce {
+  .name { color: #F8E71C; }
 }
 
 .product {
@@ -21,6 +21,6 @@
   display: none;
 }
 
-.product .name {
-  text-transform: uppercase;
+.product {
+  .name { text-transform: uppercase; }
 }

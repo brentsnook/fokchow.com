@@ -1,9 +1,9 @@
-- convert stylesheets to scss
-- split header into separate files
 - install compass and convert styles
-- install haml and convert templates
 - add central colour definitions for gold and red
+- add top menu
+- finish footer
 - fix font problem
 - add analytics
+- add grid layout
 - enable summary in google search results
 - SEO
