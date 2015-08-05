@@ -23,7 +23,7 @@
       %main= yield
       %footer
         .address='434 St. Kilda Rd Melbourne 3000'
-        %ul.social-media
+        %ul.social
           - data.social.each do |id, media|
-            %li{:class => id}
-              %a.name{:href => media.url}=media.title
+            %li{:class => [:account, id] }
+              %a.name{:href => media.url, :target => '_blank'}=media.title
