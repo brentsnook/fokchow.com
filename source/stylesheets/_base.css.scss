@@ -27,7 +27,7 @@ section.centre-column {
   @include flex(1);
   @include display-flex;
   @include box-shadow(0px 1px 24px rgba(10, 10, 10, 0.55));
-  background: #D83539 url("/images/red-background.png") repeat fixed center;
+  background: #D83539 url("/images/red-background.png") repeat scroll center;
   background-size: 200px 200px;
 }
 
@@ -36,7 +36,7 @@ main {
   @include display-flex;
   @include flex(1);
   padding: 1em;
-  background: white url("/images/paper-background.png") repeat fixed center;
+  background: white url("/images/paper-background.png") repeat scroll center;
 }
 
 h1 {

@@ -1,12 +1,27 @@
 - add top menu
+  - About
+  - Products
+  - Contact
 - add social media
+-------------------
 - finish footer
 - fix font problem
 - add product page layout
+- add about page
+- add products index
+- add contact page
+  - Wholesale market or purchase enquiries
 
 - RELEASE
 
 - add analytics
+- test in browsers
+  - Mobile Safari
+  - Desktop Safari
+  - Mobile Chrome
+  - Desktop Chrome
+  - Firefox
+  - IE
 - shrink tiles
 - add central colour definitions for gold and red
 - add grid layout
