@@ -1,0 +1,6 @@
+%footer
+  .address='434 St. Kilda Rd Melbourne 3000'
+  %ul.social
+    - data.social.each do |id, media|
+      %li{:class => [:account, id] }
+        %a.name{:href => media.url, :target => '_blank'}=media.title

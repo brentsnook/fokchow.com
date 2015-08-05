@@ -75,6 +75,10 @@ activate :deploy do |deploy|
   deploy.method = :git
 end
 
+%w(about contact products).each do |section|
+  proxy "/#{section}/index.html", "/#{section}.html"
+end
+
 data.products.each do |_, product|
   proxy "/products/#{product.id}/index.html", "/product.html", locals: { product: product }, ignore: true
 end

@@ -14,16 +14,6 @@
 
   %body{:class => page_classes}
     %section.centre-column
-      %header
-        = image_tag('fok-chow-logo.svg', class: 'logo')
-        %ul.product
-          - data.products.each do |_, product|
-            %li{:class => product.id}
-              %a.name{:href => "/products/#{product.id}"}= product.title
+      = partial 'header'
       %main= yield
-      %footer
-        .address='434 St. Kilda Rd Melbourne 3000'
-        %ul.social
-          - data.social.each do |id, media|
-            %li{:class => [:account, id] }
-              %a.name{:href => media.url, :target => '_blank'}=media.title
+      = partial 'footer'
