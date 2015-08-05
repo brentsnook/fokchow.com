@@ -1,9 +1,3 @@
-- add top menu
-  - About
-  - Products
-  - Contact
-- add social media
--------------------
 - finish footer
 - fix font problem
 - add product page layout
@@ -25,6 +19,7 @@
 - shrink tiles
 - add central colour definitions for gold and red
 - add grid layout
+- make ico file background transparent
 
 - PROMOTE
 
