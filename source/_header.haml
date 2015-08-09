@@ -2,13 +2,13 @@
   = image_tag('fok-chow-logo.svg', class: 'logo')
 
   %ul.menu
-    %li.section.about
+    %li{class: section_classes(:about)}
       %a.title{:href => "/about"}= 'About'
-    %li.section.products
+    %li{class: section_classes(:products)}
       %a.title{:href => "/products"}= 'Products'
       %ul.products_list
         - active_products.each do |_, product|
           %li{:class => [:product, product.id]}
             %a.name{:href => "/products/#{product.id}"}= product.title
-    %li.section.contact
+    %li{class: section_classes(:contact)}
       %a.title{:href => "/contact"}= 'Contact'

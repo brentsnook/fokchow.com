@@ -1,3 +1,5 @@
+@import "compass/css3/text-shadow";
+
 .name {
   .hot { color: #FF0322; }
   .mild { color: #38D200; }
@@ -17,5 +19,8 @@
 }
 
 .product {
-  .name { text-transform: uppercase; }
+  .name {
+    @include text-shadow(0px 1px 3px rgba(10, 10, 10, 0.55));
+    text-transform: uppercase;
+  }
 }
