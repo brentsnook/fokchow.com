@@ -7,7 +7,7 @@
     %li.section.products
       %a.title{:href => "/products"}= 'Products'
       %ul.products_list
-        - data.products.each do |_, product|
+        - active_products.each do |_, product|
           %li{:class => [:product, product.id]}
             %a.name{:href => "/products/#{product.id}"}= product.title
     %li.section.contact
