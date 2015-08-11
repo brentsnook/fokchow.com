@@ -1,9 +1,8 @@
-- finish footer [ ]
-- add product page layout [ ] [ ]
-- add about page [ ] [ ]
+- add contact page [ ]
+- add sweet and sour [ ]
 - add products index [ ]
-- add contact page [ ] [ ]
-  - Wholesale market or purchase enquiries
+- add product page content for each product [ ] [ ]
+- link icon to home [ ]
 
 - RELEASE
 
@@ -14,12 +13,14 @@
   - Desktop Chrome
   - Firefox
   - IE
+
 - shrink tiles
 - add grid layout
 - make ico file background transparent
 
 - PROMOTE
 
+- add next market
 - enable summary in google search results
 - responsive layout
 - add recipes

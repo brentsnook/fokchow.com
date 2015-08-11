@@ -60,9 +60,12 @@ a {
 }
 
 blockquote {
+  font-size: 1.2em;
+  color: $fokchow-gold;
+  @include text-shadow(0px 1px 0px rgba(10, 10, 10, 0.55));
+  padding: 0.2em;
+  margin-left: 2em;
   font-style: italic;
-  font-size: 1.5em;
-  color: gray;
 }
 
 .content {
@@ -70,4 +73,9 @@ blockquote {
     flex: 1
   ));
   padding: 1em;
+}
+
+.signature {
+  text-align: right;
+  img { width: 10em; }
 }

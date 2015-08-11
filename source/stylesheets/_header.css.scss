@@ -47,6 +47,15 @@ header {
         }
       }
 
+      &.active {
+        a.title { opacity: 0.7; }
+      }
+
+
+      &:hover {
+        a.title { opacity: 0.6; }
+      }
+
       &.products {
         .products_list {
           @include border-radius(0.5em);
