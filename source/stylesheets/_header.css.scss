@@ -70,10 +70,13 @@ header {
           @include transition-property(opacity, visibility);
           @include box-shadow(0px 0px 24px rgba(10, 10, 10, 0.55));
 
-          .product-name:hover {
-            opacity: 0.6;
-            @include transition(.1s ease-in-out);
-            @include transition-property(opacity);
+          .product-name {
+            @include text-shadow(0px 1px 1px rgba(10, 10, 10, 0.55));
+            &:hover {
+              opacity: 0.6;
+              @include transition(.1s ease-in-out);
+              @include transition-property(opacity);
+            }
           }
         }
 

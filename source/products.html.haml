@@ -5,4 +5,7 @@ types: products
 
 %h1= 'Fok Chow Products'
 .content
-  Check me out, I am the products page
+  %ul.products_list
+    - active_products.each do |_, product|
+      %li{:class => ['product-name', product.id]}
+        %a.name{:href => "/products/#{product.id}"}= product.title

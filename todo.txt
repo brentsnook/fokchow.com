@@ -1,10 +1,9 @@
 - add contact page [ ]
 - add sweet and sour [ ]
-- add products index [ ]
-- add product page content for each product [ ] [ ]
-- link icon to home [ ]
 
 - RELEASE
+
+- add product page content for each product [ ] [ ]
 
 - test in browsers
   - Mobile Safari
