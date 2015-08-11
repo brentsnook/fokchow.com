@@ -8,7 +8,7 @@
       %a.title{:href => "/products"}= 'Products'
       %ul.products_list
         - active_products.each do |_, product|
-          %li{:class => [:product, product.id]}
+          %li{:class => ['product-name', product.id]}
             %a.name{:href => "/products/#{product.id}"}= product.title
     %li{class: section_classes(:contact)}
       %a.title{:href => "/contact"}= 'Contact'

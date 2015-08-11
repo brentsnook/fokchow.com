@@ -1,0 +1,11 @@
+$fokchow-gold: #B9B03C;
+$fokchow-red: #D50000;
+
+@mixin chinese-symbol-background() {
+  background: #B20000 url("/images/red-background.png") repeat scroll center;
+  background-size: 200px 200px;
+}
+
+@mixin black-cloth-background() {
+  background: black url("/images/dark-softcloth.png") repeat fixed center;
+}

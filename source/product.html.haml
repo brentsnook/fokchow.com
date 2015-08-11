@@ -1,6 +1,7 @@
+- content_for :types, "#{product.id} product"
 - content_for :title, product.id.titleize
 
-.product{:class => product.id}
-  %h1.name= product.title
+%h1.name= product.title
+.content
   .description= product.description
   %h3='Recipes and nutritional information coming soon!'

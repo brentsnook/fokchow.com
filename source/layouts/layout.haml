@@ -15,5 +15,7 @@
   %body{:class => page_classes}
     %section.centre-column
       = partial 'header'
-      %main= yield
+      %main{:class => yield_content(:types) || current_page.data.types }= yield
       = partial 'footer'
+      = google_analytics_tag
+      = google_analytics_universal_tag

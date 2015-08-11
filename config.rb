@@ -75,6 +75,10 @@ activate :deploy do |deploy|
   deploy.method = :git
 end
 
+activate :google_analytics do |ga|
+  ga.tracking_id = 'UA-65214577-1'
+end
+
 %w(about contact products).each do |section|
   proxy "/#{section}/index.html", "/#{section}.html"
 end

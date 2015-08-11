@@ -1,14 +1,14 @@
-- finish footer
-- fix font problem
-- add product page layout
-- add about page
-- add products index
-- add contact page
+- add analytics [ ]
+- finish footer [ ]
+- fix font problem [ ]
+- add product page layout [ ] [ ]
+- add about page [ ] [ ]
+- add products index [ ]
+- add contact page [ ] [ ]
   - Wholesale market or purchase enquiries
 
 - RELEASE
 
-- add analytics
 - test in browsers
   - Mobile Safari
   - Desktop Safari
@@ -17,7 +17,6 @@
   - Firefox
   - IE
 - shrink tiles
-- add central colour definitions for gold and red
 - add grid layout
 - make ico file background transparent
 
