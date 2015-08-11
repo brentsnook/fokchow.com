@@ -1,6 +1,4 @@
-- add analytics [ ]
 - finish footer [ ]
-- fix font problem [ ]
 - add product page layout [ ] [ ]
 - add about page [ ] [ ]
 - add products index [ ]
