@@ -1,32 +1,664 @@
-@charset "utf-8";
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 12, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
 
-@font-face {
-  font-family: Futura;
-  src: url(/fonts/Futura.ttc);
-}
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 30, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
 
-ul {
-  list-style-type: none;
-}
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 41, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
 
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 50, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 64, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/*
+ * Removes default margin.
+ */
+/* line 74, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
 body {
-  background: black;
-  text-align: center;
-  font-family: futura;
-  margin: 10%;
-  color: white;
-}
+  margin: 0; }
 
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 86, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+a:focus {
+  outline: thin dotted; }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 108, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-}
+  font-size: 2em; }
 
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 116, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 133, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+dfn {
+  font-style: italic; }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 141, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 151, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 163, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 173, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 181, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+small {
+  font-size: 80%; }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 197, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+sup {
+  top: -0.5em; }
+
+/* line 201, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 213, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+img {
+  border: 0; }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 221, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 233, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 245, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 256, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 267, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+button,
+input {
+  line-height: normal; }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 294, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+button[disabled],
+input[disabled] {
+  cursor: default; }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 328, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 360, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/*
+ * Remove most spacing between table cells.
+ */
+/* line 373, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_normalize.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 1, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+ul {
+  list-style-type: none; }
+
+/* line 5, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: black url("/images/dark-softcloth.png") repeat fixed center;
+  font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic, "URW Gothic L", "Avant Garde", sans-serif;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  cursor: default;
+  padding: 0 10%; }
+
+/* line 21, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+section.centre-column {
+  min-height: 100vh;
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-flex: 1;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  -moz-box-shadow: 0px 1px 24px rgba(10, 10, 10, 0.55);
+  -webkit-box-shadow: 0px 1px 24px rgba(10, 10, 10, 0.55);
+  box-shadow: 0px 1px 24px rgba(10, 10, 10, 0.55);
+  background: #B20000 url("/images/red-background.png") repeat scroll center;
+  background-size: 200px 200px; }
+
+/* line 32, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+main {
+  -moz-box-shadow: 0px 1px 24px rgba(10, 10, 10, 0.55);
+  -webkit-box-shadow: 0px 1px 24px rgba(10, 10, 10, 0.55);
+  box-shadow: 0px 1px 24px rgba(10, 10, 10, 0.55);
+  display: -webkit-flex;
+  -webkit-flex: 1;
+  -webkit-flex-direction: column;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: white url("/images/paper-background.png") repeat scroll center; }
+
+/* line 42, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+h1 {
+  color: #B9B03C;
+  font-size: 1.5em;
+  padding: 0.3em;
+  display: block;
+  margin: 0;
+  background: black url("/images/dark-softcloth.png") repeat fixed center;
+  text-shadow: 0px 1px 1px rgba(10, 10, 10, 0.55);
+  text-transform: uppercase;
+  border: solid 0px #B9B03C;
+  border-bottom-width: 5px;
+  text-align: center;
+  font-weight: normal; }
+
+/* line 57, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
 a {
   color: inherit;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
+/* line 62, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+blockquote {
+  font-size: 1.2em;
+  color: #B9B03C;
+  text-shadow: 0px 1px 0px rgba(10, 10, 10, 0.55);
+  padding: 0.2em;
+  margin: 0;
+  margin-left: 2em;
+  font-style: italic; }
+
+/* line 72, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+.content {
+  -webkit-flex: 1;
+  flex: 1;
+  padding: 1em; }
+
+/* line 79, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+.signature {
+  text-align: right; }
+  /* line 81, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_base.css.scss */
+  .signature img {
+    width: 10em; }
+
+/* line 3, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  border: solid 0px #B9B03C;
+  border-bottom-width: 5px; }
+  /* line 11, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+  header img.logo {
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+    height: 90px;
+    width: 90px;
+    margin: 1.5em;
+    margin-right: 0;
+    -moz-box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.55);
+    -webkit-box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.55);
+    box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.55); }
+  /* line 20, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+  header .menu {
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    -webkit-flex: 1;
+    -webkit-justify-content: center;
+    display: flex;
+    flex: 1;
+    justify-content: center; }
+    /* line 29, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+    header .menu .section {
+      -moz-border-radius: 0.5em;
+      -webkit-border-radius: 0.5em;
+      border-radius: 0.5em;
+      text-transform: uppercase;
+      font-size: 1.5em;
+      -moz-transition: ease-in-out 0.2s;
+      -o-transition: ease-in-out 0.2s;
+      -webkit-transition: ease-in-out 0.2s;
+      transition: ease-in-out 0.2s;
+      -moz-transition-property: color, text-shadow;
+      -o-transition-property: color, text-shadow;
+      -webkit-transition-property: color, text-shadow;
+      transition-property: color, text-shadow; }
+      /* line 34, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+      header .menu .section a.title {
+        padding: 0.8em;
+        display: block;
+        opacity: 0.8; }
+      /* line 44, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+      header .menu .section.active a.title, header .menu .section:hover a.title {
+        text-shadow: 0px 1px 3px rgba(10, 10, 10, 0.55);
+        color: #B9B03C; }
+      /* line 51, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+      header .menu .section.active a.title {
+        opacity: 0.7; }
+      /* line 56, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+      header .menu .section:hover a.title {
+        opacity: 0.6; }
+      /* line 60, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+      header .menu .section.products .products_list {
+        -moz-border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        border-radius: 0.5em;
+        font-size: 0.8em;
+        margin: 0;
+        padding: 1em;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        background: #B20000 url("/images/red-background.png") repeat scroll center;
+        background-size: 200px 200px;
+        -moz-transition: ease-in-out 0.2s;
+        -o-transition: ease-in-out 0.2s;
+        -webkit-transition: ease-in-out 0.2s;
+        transition: ease-in-out 0.2s;
+        -moz-transition-property: opacity, visibility;
+        -o-transition-property: opacity, visibility;
+        -webkit-transition-property: opacity, visibility;
+        transition-property: opacity, visibility;
+        -moz-box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.55);
+        -webkit-box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.55);
+        box-shadow: 0px 0px 24px rgba(10, 10, 10, 0.55); }
+        /* line 73, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+        header .menu .section.products .products_list .product-name {
+          text-shadow: 0px 1px 1px rgba(10, 10, 10, 0.55); }
+          /* line 75, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+          header .menu .section.products .products_list .product-name:hover {
+            opacity: 0.6;
+            -moz-transition: ease-in-out 0.1s;
+            -o-transition: ease-in-out 0.1s;
+            -webkit-transition: ease-in-out 0.1s;
+            transition: ease-in-out 0.1s;
+            -moz-transition-property: opacity;
+            -o-transition-property: opacity;
+            -webkit-transition-property: opacity;
+            transition-property: opacity; }
+      /* line 84, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
+      header .menu .section.products:hover .products_list {
+        visibility: visible;
+        opacity: 1; }
+
+/* line 2, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_social_icons.css.scss.erb */
+.social .account.pintrest {
+  background-image: url(/images/social/pintrest.svg); }
+
+/* line 7, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_social_icons.css.scss.erb */
+.social .account.instagram {
+  background-image: url(/images/social/instagram.svg); }
+
+/* line 12, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_social_icons.css.scss.erb */
+.social .account.twitter {
+  background-image: url(/images/social/twitter.svg); }
+
+/* line 17, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_social_icons.css.scss.erb */
+.social .account.facebook {
+  background-image: url(/images/social/facebook.svg); }
+
+/* line 4, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_footer.css.scss */
+footer {
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  border: solid 0px #B9B03C;
+  border-top-width: 5px; }
+  /* line 14, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_footer.css.scss */
+  footer address {
+    font-style: normal; }
+  /* line 18, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_footer.css.scss */
+  footer .social {
+    display: -webkit-flex;
+    display: flex;
+    margin: 0;
+    padding: 0; }
+    /* line 24, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_footer.css.scss */
+    footer .social .account {
+      background-size: 20px 20px;
+      margin-left: 10px;
+      width: 20px;
+      height: 20px;
+      display: block;
+      font: 0/0 serif;
+      text-shadow: none;
+      color: transparent; }
+
+/* line 4, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.name .hot {
+  color: #FF0322; }
+/* line 5, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.name .mild {
+  color: #38D200; }
+/* line 6, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.name .ploughmans {
+  color: #0BD167; }
+/* line 7, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.name .sweet {
+  color: #F35C9E; }
+/* line 8, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.name .sour {
+  color: #00DEFA; }
+
+/* line 12, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.szechuan-chilli-oil .name {
+  color: #E184F4; }
+
+/* line 16, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.chilli-jam .name, .hot-chilli-jam .name, .ploughmans-chilli-jam .name {
+  color: #FF8A00; }
+
+/* line 20, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.hainanese-sauce .name, .mild-hainanese-sauce .name, .sweet-and-sour-sauce .name {
+  color: #F8E71C; }
+
+/* line 24, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.product-name .name {
+  text-shadow: 0px 1px 1px rgba(10, 10, 10, 0.8);
+  text-transform: uppercase; }
+
+/* line 30, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+.products_list {
+  list-style-type: none;
+  padding: 0; }
+  /* line 33, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+  .products_list .product-name:hover {
+    opacity: 0.6;
+    -moz-transition: ease-in-out 0.1s;
+    -o-transition: ease-in-out 0.1s;
+    -webkit-transition: ease-in-out 0.1s;
+    transition: ease-in-out 0.1s;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity; }
+
+/* line 41, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_products.css.scss */
+main.products .products_list {
+  font-size: 1.5em; }
+
+/* line 2, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_contact.css.scss */
+.contact .email {
+  color: #D50000;
+  font-size: 1.5em;
+  text-align: center;
+  text-shadow: 0px 1px 1px rgba(10, 10, 10, 0.8); }
+/* line 10, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_contact.css.scss */
+.contact main .social {
+  padding: 0; }
+  /* line 12, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_contact.css.scss */
+  .contact main .social li {
+    margin: 1em; }
+    /* line 14, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_contact.css.scss */
+    .contact main .social li .account {
+      padding-left: 1.8em;
+      background-size: 20px 20px;
+      background-repeat: no-repeat; }
+      /* line 19, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_contact.css.scss */
+      .contact main .social li .account a {
+        height: 100%;
+        width: 100%; }
