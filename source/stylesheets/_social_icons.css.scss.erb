@@ -1,9 +1,7 @@
 <% data.social.each do |id, media| %>
-  footer {
-    .social {
-      .account.<%= id %> {
-        background-image: url(<%= image_path("social/#{id}.svg") %>);
-      }
+  .social {
+    .account.<%= id %> {
+      background-image: url(<%= image_path("social/#{id}.svg") %>);
     }
   }
 <% end %>

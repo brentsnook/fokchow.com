@@ -79,9 +79,11 @@ activate :google_analytics do |ga|
   ga.tracking_id = 'UA-65214577-1'
 end
 
-%w(about contact products).each do |section|
+%w(about contact).each do |section|
   proxy "/#{section}/index.html", "/#{section}.html"
 end
+
+proxy "/index.html", "/products/index.html"
 
 data.products.each do |_, product|
   proxy "/products/#{product.id}/index.html", "/product.html", locals: { product: product }, ignore: true

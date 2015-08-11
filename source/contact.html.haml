@@ -8,11 +8,13 @@ types: contact
   %p
     Please contact us for any enquiries on products, markets, recipe ideas or wholesaling.
 
-  %p
-    %a{:href => 'mailto: hello@fokchow.com'}= 'hello@fokchow.com'
+  %p.email
+    %a{:href => 'mailto: hello@fokchow.com', :target => '_blank'}= 'hello@fokchow.com'
+
+  %p= 'Or find us on:'
 
   %p
     %ul.social
-    - data.social.each do |id, media|
-      %li{:class => [:account, id] }
-        %a.name{:href => media.url, :target => '_blank'}=media.title
+      - data.social.each do |id, media|
+        %li
+          %a.name{:href => media.url, :target => '_blank', :class => [:account, id] }=media.title
