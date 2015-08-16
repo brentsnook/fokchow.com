@@ -80,7 +80,7 @@ header {
           }
         }
 
-        &:hover {
+        &#products-menu:target, &:hover {
           .products_list {
             visibility: visible;
             opacity: 1;
