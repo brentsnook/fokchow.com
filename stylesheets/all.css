@@ -537,7 +537,7 @@ header {
             -webkit-transition-property: opacity;
             transition-property: opacity; }
       /* line 84, /Users/brent/Documents/software/fokchow.com/source/stylesheets/_header.css.scss */
-      header .menu .section.products:hover .products_list {
+      header .menu .section.products#products-menu:target .products_list, header .menu .section.products:hover .products_list {
         visibility: visible;
         opacity: 1; }
 
